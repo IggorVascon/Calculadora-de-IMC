@@ -1,0 +1,81 @@
+:root {
+    --primary-color: rgb(17, 86, 102);
+
+    --primary-color-black: rgb(9, 48, 56);
+    
+    --primary-color-results: rgb(118, 171, 189);
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 25px;
+    height: 47px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color)
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+form button:hover{
+    background-color: var(--primary-color-black);
+}
+
+form button:active {
+    background-color: var(--primary-color-black);
+}
+
+.resultados {
+    background-color: #fff;
+    transition: 0.5s;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.resultados:hover {
+    background-color: var(--primary-color-results);
+}
